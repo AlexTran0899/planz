@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.interactive{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.map-container {
+  width: 100%;
+  height: 100vh;
+}
+.searchbox-and-suggestion {
+  width: 400px;
+  margin-top: -95vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.place-info {
+  width: 700px;
+  height: 170px;
+  background: white;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 0px 0px;
+}
+input {
+  background: white;
+  position: relative;
+  width: 400px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 80px #797979;
+  outline: none;
+}
+input[type="text"] {
+  font-size: 20px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 900;
+}
+
+.suggestion {
+  background: white;
+  position: relative;
+  width: 400px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+.suggestion button {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0px;
+  border: 0.5px solid rgb(149, 149, 149);
+  transition: 0.2s all;
+}
+.suggestion button:hover {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  box-shadow: 3px 6px#b4b4b4;
+  transform: translate(-1px, -2px);
+}
+.suggestion button:hover:active {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  transition: 0.1s;
+  box-shadow: 1px 2px#444;
+  transform: translate(2px, 5px);
+}
